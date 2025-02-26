@@ -1,0 +1,12 @@
+CLI Mapper should get parse and map command line arguments into respective properties of the given Type.
+CLI Mapper should set true for bool property if the standalone flag is true.
+CLI Mapper should set command for string property if the standalone flag is true.
+CLI Mapper should not process when there is no argument given.
+CLI Mapper should accept both long and short name for commands.
+CLI Mapper should overwrite value for non collection types if similar commands present multiple times in the argument.
+CLI Mapper should add values for collection types if similar commands present multiple times in the argument.
+CLI Mapper shoud not throw exception when there is no value for given command.
+CLI Mapper should throw exception when value and datatype of the property not matches.
+CLI Mapper should throw exception when the datatype is not string/bool and standalone flag is true.
+CLI Mapper should throw exception when there is no property annotated with command.
+CLI Mapper should throw exception when there are duplicate command.
